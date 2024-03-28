@@ -4,14 +4,12 @@ public class Vuelo {
     private String origen;
     private String destino;
     private int numeroVuelo;
-    private Reserva reserva;
 
 
-    public Vuelo(String origen, String destino, int numeroVuelo, int numeroReserva) {
+    public Vuelo(String origen, String destino, int numeroVuelo) {
         this.origen = origen;
         this.destino = destino;
         this.numeroVuelo = numeroVuelo;
-        this.reserva = new Reserva(numeroReserva);
     }
 
     public String getOrigen() {
@@ -38,11 +36,4 @@ public class Vuelo {
         this.numeroVuelo = numeroVuelo;
     }
 
-    public Reserva getReserva() {
-        return reserva;
-    }
-
-    public void setReserva(Reserva reserva) {
-        this.reserva = reserva;
-    }
 }
